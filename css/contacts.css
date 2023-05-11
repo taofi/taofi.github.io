@@ -1,0 +1,32 @@
+section {
+  min-height: 82vh;
+  margin: 70px;
+  display: grid;
+  grid-template-rows: repeat(4, 50px) calc(100% - 200px);
+  margin-top: 10px;
+}
+section h3, section p {
+  color: white;
+  font-family: "Molot";
+  font-size: 30px;
+}
+section h3 span, section p span {
+  font-size: 0.8em;
+}
+@media (max-width: 768px) {
+  section h3, section p {
+    font-size: 20px;
+  }
+}
+section #mapCin {
+  margin-top: 30px;
+  box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  overflow: hidden;
+  border: 5px solid #20cdb9;
+}
+@media (max-width: 768px) {
+  section {
+    margin: 20px;
+    grid-template-rows: repeat(4, 45px) calc(90% - 160px);
+  }
+}

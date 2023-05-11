@@ -1,0 +1,149 @@
+
+nav{
+    box-sizing: border-box;
+    @include neon;
+    height: 70px;
+    border: none;
+    border-bottom: 4px solid;
+    border-color: $maincolor;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+        flex: 0 1 50px;
+       // margin-right: 10px;
+    }
+    img{
+        margin-top: 5px;
+        margin-left: 5px;
+        height: 80%;
+    }
+    .icon{
+        width: 100%;
+    }
+    p{
+        margin: -2px;
+        justify-content: center;
+        text-align: center;
+        a{
+            font-family: 'ROBO';
+            font-style: normal;
+            font-size: 40px;
+            color: white;
+           
+        }
+        flex: 2 0 250px;
+    }
+
+    @media (max-width: 460px) {
+        height: 50px;
+        img{
+            margin-top: 5px;
+            height: 40px;
+           // background-color: blue;
+        }
+        p{
+           // background-color: red;
+           flex: 2 0 200px;
+           a{
+            font-size: 30px;
+           }
+        }
+    }
+    @media (max-width: 375px) {
+        height: 40px;
+        img{
+            margin-top: 5px;
+            height: 35px;
+        }
+        p{
+            flex: 2 0 150px;
+            a{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.burgerI{
+    z-index: 0;
+    position: absolute;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+    right: 20px;
+    transition: 0.3s;
+    @media (max-width: 999px) {
+        display: block;
+        position: relative;
+    }
+    @media (max-width: 460px) {
+        height: 35px;
+        right: 5px;
+    }
+}
+#Bclose{
+    right: 0;
+    position: relative;
+}
+
+#burger_container{
+    @include neon;
+    z-index: 40;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    flex: 3 1 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: left 0.8s;
+    a{
+        box-sizing: border-box;
+        z-index: 2;
+        @include neon;
+        font-size: 20px;
+        line-height: 20px;
+        white-space: nowrap;
+        border-left:4px  $maincolor solid;
+        flex: 1 0 30%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        color: $maincolor;
+        transition: color 0.2s, background-color 0.2s;
+        &:hover{
+            color: white;
+            background-color: rgba(32, 205, 185, 0.6);
+        }
+    }
+    @media (max-width: 999px) {
+        border-radius: 5px;
+        border: 3px solid $maincolor;
+        margin: 0;
+        padding: 8px;
+        position: fixed;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 10%);
+        justify-items: end;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: $bgcolor;
+        opacity: 0.95;
+        z-index: 4;
+        left: -120vh; 
+        a{
+            position: relative;
+            margin: 5px;
+            width: calc(100% - 25px);
+            border: 3px solid $maincolor;
+            border-radius: 5px;
+        }
+    }
+    @media (max-width: 460px) {
+        width: 100vw;
+    }
+}

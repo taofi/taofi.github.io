@@ -1,0 +1,32 @@
+.place{
+    aspect-ratio: 1;
+    min-width: 10px;
+    width: 4.5%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 30% 30% 0px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        background-color: rgb(119, 119, 119);
+    }
+    margin: 3px;
+}
+.row{
+   // background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+.placeCont{
+    min-width: 0px;
+    //background-color: red;
+    .screen{
+     //  min-width: 100px;
+        margin: 10%;
+        height: 0px;
+        border: 2px solid white;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,57 @@
+#loading {
+  transition: 0.2s;
+  top: 0;
+  z-index: 600;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loading img {
+  position: relative;
+  width: 100px;
+}
+#loading .imbox {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+#loading #bodyload {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+}
+#loading #circle1 {
+  left: 15px;
+  bottom: 72px;
+  width: 50px;
+  position: absolute;
+  animation: rotate 2.8s infinite linear;
+}
+#loading #circle2 {
+  right: 30px;
+  bottom: 72px;
+  width: 60px;
+  position: absolute;
+  animation: rotate 3s infinite linear;
+}
+#loading p {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  color: white;
+  font-family: "robo";
+  font-size: 30px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=loading.css.map */
