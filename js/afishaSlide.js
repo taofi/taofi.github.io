@@ -53,7 +53,7 @@ function arrRF(){
     let tmp = posterW*(Math.trunc(visiblePoster) - visiblePoster);
     maxPos = (countP - Math.trunc(visiblePoster)) * (posterW) + tmp; 
     currentPos -= shag;
-    currentPos = Math.max(currentPos, -(maxPos + 50))
+    currentPos = Math.max(currentPos, -(maxPos))
     move();
 }
 

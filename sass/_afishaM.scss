@@ -96,6 +96,9 @@
                         font-size: 1.5em;
                         text-align: left;
                         text-shadow: 0 0 4px rgb(0, 0, 0);
+                        @media (max-width: 375px) {
+                            font-size: 18px;
+                        }
                     }
                 }
                 a{
