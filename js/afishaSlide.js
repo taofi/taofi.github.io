@@ -64,6 +64,7 @@ function move(){
 window.addEventListener("resize", changeWindow);
 
 function changeWindow() {
+    posterW = posters[0].offsetWidth + 40;
     if (window.innerWidth <= 320) {
         currentPos = 0;
         move();
