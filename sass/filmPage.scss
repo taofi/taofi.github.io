@@ -107,7 +107,8 @@ main{
                 align-items: flex-start;
                 padding: 10px;
                 display: flex;
-                p{width: 90%;}
+                p{width: 90%; 
+                word-wrap:break-word;}
                 @media  (max-width: 800px) {
                     p{font-size: 15px;} 
                 }

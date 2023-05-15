@@ -151,6 +151,7 @@ main .commentSec #commentCont .comment {
 }
 main .commentSec #commentCont .comment p {
   width: 90%;
+  word-wrap: break-word;
 }
 @media (max-width: 800px) {
   main .commentSec #commentCont .comment p {
