@@ -1,0 +1,15 @@
+footer{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top:1px solid #585858;
+    display: grid;
+    justify-content: center;
+    color: #585858;
+    img{margin-left: 10px;
+        width: 40px;}
+    p{
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+}

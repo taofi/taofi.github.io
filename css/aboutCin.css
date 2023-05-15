@@ -1,0 +1,68 @@
+main {
+  padding: 60px;
+  color: white;
+  font-weight: 100;
+  font-family: "Molot";
+}
+main img {
+  box-shadow: 0px 0px 8px #20cdb9, inset 0px 0px 8px #20cdb9;
+  border: 2px solid #20cdb9;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+main p {
+  margin: 20px;
+  font-size: 30px;
+}
+main .intro h2 {
+  font-size: 40px;
+  margin: 20px;
+  margin-top: 0px;
+}
+main .bar, main .cassa {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+main .bar p, main .cassa p {
+  text-indent: 15px;
+}
+main .cassa {
+  margin: 10px;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+  main {
+    padding: 20px;
+  }
+  main .cassa, main .bar {
+    grid-template-columns: 50% 50%;
+  }
+  main p {
+    font-size: 25px;
+  }
+  main .intro h2 {
+    margin: 0;
+    font-size: 35px;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  main .intro h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+  main .intro img {
+    margin: 0;
+  }
+  main .cassa, main .bar {
+    margin-top: 10px;
+    grid-template-columns: 100%;
+  }
+  main p {
+    margin: 0;
+    font-size: 20px;
+  }
+}

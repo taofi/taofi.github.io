@@ -1,0 +1,134 @@
+@import "_vars.scss";
+@import "_mixin.scss";
+.place{
+    aspect-ratio: 1;
+    min-width: 10px;
+    width: 4.5%;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 30% 30% 0px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        background-color: rgb(119, 119, 119);
+    }
+    margin: 3px;
+}
+.row{
+   // background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+.placeCont{
+    min-width: 0px;
+    //background-color: red;
+    .screen{
+     //  min-width: 100px;
+        margin: 10%;
+        height: 0px;
+        border: 2px solid white;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+}
+main{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.placeChoose{
+    //background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    font-family: 'molot';
+    color: white;
+    //background-color: red;
+    .placeCont{
+        width: 50%;
+        //background-color: red;
+        padding: 0;
+    }
+    h2{
+        text-align: center;
+        flex: 0 0 100%;
+        font-weight: 100;
+        margin: 0;
+        span{
+            font-size: 15px;
+            color: rgb(161, 161, 161);
+        }
+    }
+    p{
+        margin: 5px;
+        font-size: 20px;
+        color: rgb(190, 190, 190);
+    }
+    @media (max-width: 430px) {
+        padding: 0px;
+        h2{
+            font-size: 17px;
+            span{
+                font-size:14px
+            }
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+
+form{
+   // background-color: red;
+    color: white;
+    font-size: 25px;
+    font-family: 'rubik mono';
+    fieldset{
+        width: 320px;
+        border: 0;
+        display: grid;
+        label{
+            display: grid;
+            margin: 5px;
+            input{
+                height: 25px;
+                margin: 0;
+                @include button;
+                text-align:left;
+                padding-left: 10px;
+                border-radius: 5px;
+                background-color: $bgcolor;
+            }
+        }
+    }
+    #sub{
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 5px;
+        font-size: 12px;
+        @include button;
+        width: 120px;
+        height: 30px;
+        margin-left: 20px;
+        font-family: 'rubik mono';
+    }
+    @media (max-width: 430px) {
+        font-size: 16px;
+        fieldset{
+            width: 250px;
+            label{
+                input{
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
