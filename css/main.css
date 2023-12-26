@@ -291,6 +291,7 @@ a:active{
     opacity: 0;
     transition: 0.5s;
 }
+
 #arrowR, #arrowL{
     display: flex;
     box-sizing: border-box;
@@ -322,7 +323,7 @@ a:active{
 #galleryWindow{
     position: relative;
     border: 3px solid #FB9D11;
-    width: 80%;
+    width: 75%;
     height: auto;
     overflow: hidden;
     aspect-ratio: 16 / 9;
