@@ -210,6 +210,9 @@ a:active{
     }
 }
 @media screen and (max-width: 500px){
+    #FirstBlock{
+        margin-top: 40px;
+    }
     #picBlock img{opacity: 0.7;}
     .infoFB h3{
         width: 85%;
@@ -226,6 +229,9 @@ a:active{
     }
 }
 @media screen and (max-width: 400px) {
+    #FirstBlock{
+        margin-top: 30px;
+    }
     #picBlock img{opacity: 0.5;}
     .infoFB h3{
         font-size: 15px;
@@ -263,7 +269,6 @@ a:active{
     align-items: center;
     justify-content: space-around;
     margin-top: 100px;
-    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -276,12 +281,16 @@ a:active{
 #service img{
     width: 80%;
 }
+@media screen and (max-width: 768px) {
+    #service{
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width: 320px) {
     #service{
         font-size: 12px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20px;
     }
 }
 /*gallery*/
@@ -313,6 +322,7 @@ a:active{
 }
 
 #gallery{
+    margin-top: 100px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -332,7 +342,15 @@ a:active{
 .slide img, .slide{
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    #gallery{
+        margin-top: 30px;
+    }
+}
 @media screen and (max-width: 320px) {
+    #gallery{
+        margin-top: 20px;
+    }
     #galleryWindow{
         width: 90%;
     }
@@ -393,6 +411,10 @@ a:active{
 
 
 @media screen and (max-width: 340px) {
+    #servicePrice{
+        margin-top: 0px;
+        padding: 15px;
+    }
     .cardPrice{
         margin-top: 15px;
         width: 120px;
@@ -441,9 +463,14 @@ footer img{
 @media screen and (max-width: 768px) {
     footer{
         font-size: 8px;
-        margin-top: 40px;
+        margin-top: 30px;
     }
     footer img{
         width: 20px;
+    }
+}
+@media screen and (max-width: 426px) {
+    footer{
+        margin-top: 20px;
     }
 }
