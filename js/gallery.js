@@ -18,7 +18,7 @@ function Swipe(direction){
 }
 
 function change(){
-    console.log(visSlide);
+   // console.log(visSlide);
     slides[last].style.opacity ='0';
     slides[visSlide].style.opacity = '1';
 }

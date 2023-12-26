@@ -346,13 +346,19 @@ a:active{
     #gallery{
         margin-top: 30px;
     }
+    #galleryWindow{
+        width: 80%;
+    }
+    #arrowR, #arrowL{
+        width: 20px;
+    }
 }
 @media screen and (max-width: 320px) {
     #gallery{
         margin-top: 20px;
     }
     #galleryWindow{
-        width: 90%;
+        width: 100%;
     }
     #arrowR, #arrowL{
         width: 12px;
