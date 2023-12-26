@@ -183,6 +183,7 @@ a:active{
 }
 
 .infoFB{
+    background-color: rgba(0, 0, 0, 0.352);
     margin-left: max(5%, 40px);
     text-shadow: 5px 2px 10px #000;
     position: absolute;
