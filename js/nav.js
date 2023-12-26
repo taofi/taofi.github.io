@@ -6,9 +6,9 @@ window.addEventListener('resize', function(){
     if(767 > window.innerWidth)
         currentNavHeight = 50;
     if(550 > window.innerWidth)
-        currentNavHeight = 35;
+        currentNavHeight = 45;
     if(420 > window.innerWidth)
-        currentNavHeight = 25;
+        currentNavHeight = 35;
     if(this.scrollY > 10)
         nav.style.height = currentNavHeight / 1.5 + 'px';
 });
