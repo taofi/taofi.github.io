@@ -287,10 +287,15 @@ a:active{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
     #service{
         font-size: 12px;
         margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    #service figure{
+        margin: 10px;
+        width: 35%;
     }
 }
 /*gallery*/
